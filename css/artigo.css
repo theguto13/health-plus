@@ -1,5 +1,5 @@
 /*
-    Gerais
+    Todos
 */
 .titulo-artigo{
     user-select: none;
@@ -13,6 +13,12 @@
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
+}
+.artigo-container a{
+    width: 100%;
+    max-width: 720px;
+    min-width: 405px;
+    min-height: 350px;
 }
 .artigo-img{
     background-repeat: no-repeat;
@@ -59,11 +65,53 @@
     background-color: white;
     transition: 1s all;
 }
+@media (max-width: 950px){
+    .artigo-container{
+        display: block;
+    }
+    .artigo-img{
+        margin: 0 auto;
+    }
+    .resumo{
+        margin: 15px auto 25px auto;
+        width: 90%;
+    }
+}
+@media (max-width: 750px){
+    iframe{
+        display: none;
+    }
+    .a9{
+        display: none;
+    }
+}
+@media (max-width: 465px){
+    .artigo-img{
+        min-height: 225px;
+        min-width: 300px;
+    }
+    .resumo{
+        display: none;
+    }
+    .resumo9{
+        display: block;
+    }
+}
+@media (max-width: 455px){
+    .artigo-img{
+        min-height: 150px;
+        min-width: 200px;
+    }
+    .referencia a{
+        display: block;
+        margin-top: 7px;
+    }
+}
 /*
     Artigo 1
 */
 .t1{
-    color: #292929;
+    color: #2362ac;
 }
 .img1{
     background-image: url(../images/health+.svg);
@@ -71,7 +119,7 @@
 #back1{
     padding: 5px;
     background-size: 200% 100%;
-    background-image: linear-gradient(to right, white 50%, #292929 50%);
+    background-image: linear-gradient(to right, white 50%, #2362ac 50%);
     animation: back1 1s both .8s;
 }
 @keyframes back1{
@@ -84,16 +132,21 @@
     animation: mais 20s infinite;
 }
 .r1{
-    background-color: #292929;
+    background-color: #2362ac;
 }
 .r1 a:hover{
-    color: #292929;
+    color: #2362ac;
+}
+.artigo1-link{
+    text-decoration: none;
+    color: #2362ac;
+    font-weight: bold;
 }
 /*
     Artigo 2
 */
 .t2{
-    color: #df602d;
+    color: #396355;
 }
 .img2{
     background-image: url(../images/atividade1.jpg);
@@ -101,7 +154,7 @@
 #back2{
     padding: 5px;
     background-size: 200% 100%;
-    background-image: linear-gradient(to right, white 50%, #df602d 50%);
+    background-image: linear-gradient(to right, white 50%, #396355 50%);
     animation: back2 1s both .8s;
 }
 @keyframes back2{
@@ -111,10 +164,10 @@
     }
 }
 .r2{
-    background-color: #df602d;
+    background-color: #396355;
 }
 .r2 a:hover{
-    color: #df602d;
+    color: #396355;
 }
 /*
     Artigo 3
@@ -255,15 +308,17 @@
     Artigo 8
 */
 .t8{
-    color: #df602d;
+    color: #f5a66d;
 }
 .img8{
-    background-image: url(../images/atividade1.jpg);
+    background-image: url(../images/atividade7.jpg);
+    background-position: 0 100%;
+    
 }
 #back8{
     padding: 5px;
     background-size: 200% 100%;
-    background-image: linear-gradient(to right, white 50%, #df602d 50%);
+    background-image: linear-gradient(to right, white 50%, #f5a66d 50%);
     animation: back8 1s both .8s;
 }
 @keyframes back8{
@@ -273,24 +328,26 @@
     }
 }
 .r8{
-    background-color: #df602d;
+    background-color: #f5a66d;
 }
 .r8 a:hover{
-    color: #df602d;
+    color: #f5a66d;
 }
 /*
     Artigo 9
 */
 .t9{
-    color: #df602d;
+    color: #C1D28C;
 }
 .img9{
-    background-image: url(../images/atividade1.jpg);
+    background-color: #C1D28C;
+    background-image: url(../images/logo-fit-home.png);
+    background-size: 30%;
 }
 #back9{
     padding: 5px;
     background-size: 200% 100%;
-    background-image: linear-gradient(to right, white 50%, #df602d 50%);
+    background-image: linear-gradient(to right, white 50%, #C1D28C 50%);
     animation: back9 1s both .8s;
 }
 @keyframes back9{
@@ -300,8 +357,18 @@
     }
 }
 .r9{
-    background-color: #df602d;
+    background-color: #C1D28C;
 }
 .r9 a:hover{
-    color: #df602d;
+    color: #C1D28C;
+}
+iframe{
+    width: 90%;
+    height: 90%;
+    margin: 0 5%;
+}
+.artigo h2{
+    text-align: center;
+    margin: 25px;
+    color: #C1D28C;
 }

@@ -55,13 +55,14 @@ header, header nav ul{
 nav ul > li{
     list-style-type: none;
     padding: 10px;
+    margin: 0 -5px;
 }
 nav ul li > a{
     padding: 10px;
 }
 nav ul li:first-child{
     padding: 10px;
-    margin-right: 13px;
+    margin-right: 5px;
 }
 .button1:focus ~ nav ul{
     height: 190px;
@@ -80,26 +81,6 @@ nav ul > a{
 nav ul li>a:hover{
     cursor: pointer;
     animation: pocka 0.2s both;
-}
-.ms{
-    padding: 0 10px;
-}
-.ms:hover{
-    animation: pocka 0.2s both;
-    cursor: pointer;
-}
-.ms label{
-    background-image: url(../images/modeswitch.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 10px;
-    margin: 0;
-}
-.ms label:hover{
-    cursor: pointer;
-}
-.ms input{
-    display: none;
 }
 .button1:hover{
     cursor: pointer;
