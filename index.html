@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Início | health+</title>
+</head>
+<body>
+    <!--Header-->
+    <header>
+        <div class="logo">
+            <a href="index.html"><h2>health<span class="mais">+</span></h2></a>
+        </div>
+        <div class="logo2">
+            <a href="index.html"><h2>h<span class="mais2">+</span></h2></a>
+        </div>
+        <button class="button1">
+            &#9776
+        </button>
+        <nav>
+            <ul>
+                <li><a href="pi_darkmode/index.html"><img src="images/modeswitch.svg" alt="modeswitch"></a></li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="html/artigos.html">Artigos</a></li>
+                <li><a href="html/sobre-nos.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!--Artigos recomendados-->
+    <h2 class="artigos_recomendados">Posts Recomendados</h2>
+    <div class="recomendation-container">
+        <a href="html/artigos/artigo2.html">
+            <div class="rec recomendation1">
+                <h3>Basquete: como começar?</h3>
+            </div>
+        </a>
+        <a href="html/artigos/artigo3.html">
+            <div class="rec recomendation2">
+                <h3>Caminhada ou corrida?</h3>
+            </div>
+        </a>
+        <a href="html/artigos/artigo4.html">
+            <div class="rec recomendation3">
+                <h3>Levantar peso quando jovem faz mal?</h3>
+            </div>
+        </a>
+    </div>
+    <!--Calculadora de IMC-->
+    <div class="imc-container">
+        <div id="anchor"></div>
+        <div class="titulo-imc">
+        <h2>Vamos checar seu IMC?</h2>
+        </div>
+        <div class="imc">
+            <div class="informacoes">
+                <main>
+                    <div class="inputs">
+                        <div class="inputidade">
+                            <p>Idade: </p><input type="text" id="idade" name="idade" required autocomplete="off" maxlength="2"><p> anos</p>
+                        </div>
+                        <div class="inputpeso">
+                            <p>Peso: </p><input type="text" id="peso" name="peso" required autocomplete="off" maxlength="3"><p> kg</p>
+                        </div>
+                        <div class="inputaltura">
+                            <p>Altura: </p><input type="text" id="altura" name="altura" required autocomplete="off" maxlength="3"><p> cm</p>
+                        </div>
+                    </div>
+                    <div class="escolha" id="escolha">
+                        <div class="opcao1">
+                            <input id="feminino" type="radio" name="tipo" value="feminino" required>
+                            <label for="feminino">Feminino</label>
+                        </div>
+                        <div class="opcao2">
+                            <input id="masculino" type="radio" name="tipo" value="masculino" required>
+                            <label for="masculino">Masculino</label>
+                        </div>
+                    </div>
+                    <button id="calcular">Calcular</button>
+                </main>
+            </div>
+            <div class="resultado">
+                <div class="resultado2">
+                    <h2 id="resultado-titulo"></h2>
+                    <p id="resultado"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/imc.js"></script>
+    <!--Video / Texto-->
+    <div class="video-texto">
+        <h2 class="titulo-video">Recomendação da Semana</h2>
+        <div class="video-area">
+            <div class="video video-item">
+                <iframe class="video1" src="https://www.youtube.com/embed/Gnh3dwps_jE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video2" src="https://www.youtube.com/embed/Gnh3dwps_jE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="video3" src="https://www.youtube.com/embed/Gnh3dwps_jE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="texto video-item">
+                <h4>Por que fazer atividade física?</h4>
+                <p>No nosso vídeo recomendado desta semana, o Dr. Drauzio Varella fala sobre os males da vida sedentária e sobre os benefícios que a prática da atividade física traz para o funcionamento do nosso organismo e nosso bem estar mental, e quem diria que, para o Dr. Drauzio, o maior benefício dos exercícios físicos seria para o espírito e mente.</p>
+            </div>
+        </div>
+    </div>
+    <!--Formulário de contato-->
+    <div class="formulario">
+        <form>
+            <h2>Contato</h2>
+            <input type="text" placeholder="Nome" required>
+            <input type="text" placeholder="E-mail" required>
+            <textarea placeholder="Mensagem" autocomplete="off" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <!--Footer / Rodapé-->
+    <footer>
+        <div class="logo-rodape">
+            <div class="texto-rodape">
+                <h4>G Softwares © Copywriting</h4>
+                <h5>Todos os direitos reservados</h5>
+            </div>
+        </div>
+        <div class="redes-rodape">
+            <div class="facebook"><a href="https://www.facebook.com/healthplus.oficial" target="_blank"><img src="images/facebook.svg" alt="facebook" width="35px" height="35px"></a></div>
+            <div class="instagram"><a href="https://instagram.com/healthplus.oficial" target="_blank"><img src="images/instagram.svg" alt="instagram" width="35px" height="35px"></a></div>
+            <div class="twitter"><a href="https://twitter.com/healthplus_ofi" target="_blank"><img src="images/twitter.svg" alt="twitter" width="35px" height="35px"></a></div>
+        </div>
+    </footer>
+</body>
+</html>

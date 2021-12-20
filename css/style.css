@@ -1,0 +1,307 @@
+/*
+    Propriedades Gerais
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, Poppins;
+    animation: linear;
+}
+*::selection{
+    background-color: rgba(129, 129, 129, 0.4);
+    color: black;
+}
+*::-moz-selection{
+    background-color: rgba(129, 129, 129, 0.4);
+    color: black;
+}
+@font-face{
+    font-family: Poppins;
+    src: url(../fonts/Poppins-Medium.ttf);
+}
+html, body{
+    height: 100%;
+}
+::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+}
+::-webkit-scrollbar{
+    width: 7px;
+    background: rgba(0, 0, 0, 0);
+    opacity: 0;
+}
+::-webkit-scrollbar-thumb{
+    background: #5f5f5f;
+    border-radius: 20px;
+}
+/*
+    Header / Navbar
+*/
+header{
+    user-select: none;
+    padding: 10px 35px;
+    background-color: white;
+    border-bottom: 1px #292929 solid;
+}
+header, header nav ul{
+    display: flex;
+    flex-direction: row;
+    font-size: 19px;
+    justify-content: space-between;
+    margin: 0 15px;
+}
+nav ul > li{
+    list-style-type: none;
+    padding: 10px;
+}
+nav ul li > a{
+    padding: 10px;
+}
+nav ul li:first-child{
+    padding: 10px;
+    margin-right: 13px;
+}
+.button1:focus ~ nav ul{
+    height: 190px;
+}
+nav ul{
+    overflow: hidden;
+    transition: all .75s;
+}
+nav ul > a{
+    text-decoration: none;
+    color: #292929;
+    padding: 10px;
+    font-weight: 500;
+    margin: 0 8px;
+}
+nav ul li>a:hover{
+    cursor: pointer;
+    animation: pocka 0.2s both;
+}
+.ms{
+    padding: 0 10px;
+}
+.ms:hover{
+    animation: pocka 0.2s both;
+    cursor: pointer;
+}
+.ms label{
+    background-image: url(../images/modeswitch.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 10px;
+    margin: 0;
+}
+.ms label:hover{
+    cursor: pointer;
+}
+.ms input{
+    display: none;
+}
+.button1:hover{
+    cursor: pointer;
+    animation: pocka2 0.2s;
+    animation-fill-mode: both;
+}
+@keyframes pocka{
+    100%{
+    background-color: rgba(0, 0, 0, 0.1);
+    border: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    }
+}
+@keyframes pocka2{
+    100%{
+    background-color: rgba(0, 0, 0, 0.1);
+    border: rgba(0, 0, 0, 0.1);
+    border-radius: 28px;
+    }
+}
+.logo, .logo2{
+    color: #292929;
+    font-size: 20px;
+    padding-top: 4px;
+    width: max-content;
+}
+.logo2{
+    display: none;
+}
+header a{
+    text-decoration: none;
+    color: #292929;
+}
+.mais, .mais2{
+    animation: mais 20s infinite;
+}
+.mais2{
+    display: none;
+}
+@keyframes mais{
+    0%{
+       color: red;
+    }
+    20%{
+       color: #FF0080;
+    }
+    30%{
+       color: yellow;
+    }
+    40%{
+       color: #66ff66;
+    }
+    50%{
+       color: green;
+    }
+    60%{
+       color: aqua;
+    }
+    80%{
+       color: blue;
+    }
+    100%{
+       color: red;
+    }
+}
+.button1{
+    background: none;
+    border: none;
+    font-size: 22px;
+    padding: 5px;
+    display: none;
+    width: max-content;
+    border-radius: 28px;
+}
+@media (max-width: 620px){
+    .button1{
+        display: flex;
+        position: absolute;
+        right: 25px;
+        top: 17px;
+    }
+    nav ul{
+        height: 0px;
+        padding-top: 10px;
+        align-items: center;
+        padding-bottom: 8px;
+    }
+    header{
+        padding: 0 35px;
+        margin-top: 15px;
+    }
+    header, header nav ul{
+        flex-direction: column;
+    }
+    .logo,.mais{
+        display: none;
+    }
+    .logo2,.mais2{
+        display: inline-block;
+    }
+    .titulo-video{
+        animation: none;
+    }
+    .titulo-video{
+        animation: videoanimation 20s infinite;
+    }
+}
+@keyframes videoanimation{
+    0%{
+        border-color: red;
+    }
+    20%{
+        border-color: hotpink;
+    }
+    30%{
+        border-color: yellow;
+    }
+    40%{
+        border-color: #66ff66;
+    }
+    50%{
+        border-color: green;
+    }
+    60%{
+        border-color: aqua;
+    }
+    80%{
+        border-color: blue;
+    }
+    100%{
+        border-color: red;
+    }
+}
+/*
+    Corpo / Gerais
+*/
+@keyframes titulos{
+    100%{
+        color: white;
+        background-position: -100% 0;
+    }
+}
+@keyframes subtitulos{
+    100%{
+        color: black;
+    }
+}
+@keyframes texto{
+    100%{
+        color: white;
+    }
+}
+@keyframes borda{
+    100%{
+        border-color: white;
+    }
+}
+@keyframes preto-branco{
+    100%{
+        background-color: white;
+    }
+}
+@keyframes branco-preto{
+    100%{
+        background-color: #292929;
+    }
+}
+/*
+    Footer / Rodapé
+*/
+footer{
+    border-top: 2px solid #505050;
+    color: #505050;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+}
+.texto-rodape h5{
+    margin-top: 5px;
+    text-align: center;
+}
+.facebook, .instagram, .twitter{
+    display: inline-block;
+    margin: 0 10px;
+}
+@media (max-width: 610px){
+    footer{
+        display: block;
+    }
+    footer *{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .facebook, .instagram, .twitter{
+        margin: 10px auto 0 auto;
+        padding: 0 7px;
+    }
+    .facebook{
+        padding: 0 3px;
+    }
+}

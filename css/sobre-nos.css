@@ -1,0 +1,210 @@
+/*
+    Propriedades Gerais
+*/
+*{
+    animation: linear;
+    scroll-behavior: smooth;
+}
+/*
+    Parte 1
+*/
+.parte1{
+    margin-top: -15px;
+}
+.sobre-nos{
+    text-align: center;
+    margin: 30px auto 20px auto;
+    cursor: default;
+    border-bottom: 2px solid;
+    animation: videoanimation 20s infinite;
+    width: max-content;
+    padding: 5px;
+    transition: .5s all;
+}
+.sobre-nos:hover{
+    letter-spacing: 1px;
+}
+.texto-p1{
+    min-width: 375px;
+    text-align: justify;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+/*
+    Parte 2
+*/
+.parte2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.img-container{
+    background-color: #292929;
+    width: 50%;
+    max-width: 720px;
+    min-width: 450px;
+    min-height: 350px;
+    margin: 30px auto;
+    border: 1px solid;
+    border-radius: 15px;
+    border-color:#292929;
+    transition: .5s all;
+    padding: 35px;
+}
+.img-historia{
+    width: 100%;
+    margin: 0 auto;
+    padding: 35px;
+    padding-right: 0px;
+}
+.texto-historia h2{
+    border-bottom: 2px solid red;
+    animation: videoanimation 20s infinite;
+    width: max-content;
+    padding: 5px;
+    cursor: default;
+    transition: .5s all;
+}
+.texto-historia h2:hover{
+    letter-spacing: 1px;
+}
+.texto-historia p{
+    margin-top: 20px;
+    margin-right: 40px;
+}
+.texto-historia{
+    margin-left: 30px auto;
+    width: 50%;
+    min-width: 400px;
+}
+.texto{
+    max-width: 720px;
+    margin: 0 auto;
+    text-align: justify;
+}
+@media (max-width: 1580px){
+    .texto-historia{
+        width: 50%;
+        margin: 35px;
+    }
+    .img-container{
+        margin: 35px;
+    }
+}
+@media (max-width: 1280px){
+    .texto-p1{
+        text-align: justify;
+    }
+    .parte2{
+        display: block;
+    }
+    .parte2 *{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .img-container{
+        width: 75%;
+        height: 300px;
+        margin: 0 auto;
+    }
+    .texto-historia h2{
+        text-align: center;
+        margin-top: 20px;
+    }
+    .texto-historia{
+        margin: 20px auto;
+        width: 80%;
+        min-width: 300px;
+    }
+    .texto-historia p{
+        text-align: justify;
+        margin: 20px auto;
+    }
+}
+@media (max-width: 800px){
+    .img-container{
+        min-height: 250px;
+    }
+}
+@media (max-width: 500px){
+    .img-historia, .img-container{
+        min-width: 300px;
+        min-height: 125px;
+        height: 200px;
+    }
+}
+/*
+    Redes sociais
+*/
+.redes{
+    width: 100%;
+    text-align: center;
+    margin: 35px auto;
+}
+.redes *{
+    display: inline-block;
+}
+.redes-sociais-container{
+    margin: 47px auto;
+}
+.redes-sociais-container h2{
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 2px solid red;
+    max-width: max-content;
+    padding: 5px;
+    animation: videoanimation 20s infinite;
+    cursor: default;
+    transition: .5s all;
+}
+.redes-sociais-container h2:hover{
+    letter-spacing: 1px;
+}
+.redes a{
+    width: max-content;
+    min-width: 90px;
+    max-width: 120px;
+    min-height: 30px;
+    margin: -10px 15px;
+}
+.rede{
+    width: 100%;
+    max-width: 120px;
+    min-height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: .5s all;
+}
+.facebook{
+    background-image: url(../images/facebook.svg);
+}
+.instagram{
+    background-image: url(../images/instagram.svg);
+}
+.twitter{
+    background-image: url(../images/twitter.svg);
+}
+@media (max-width: 385px){
+    .redes a{
+        margin: -10px 5px;
+    }
+}
+/*
+    Footer / Rodapé
+*/
+footer{
+    border-top: 2px solid #505050;
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+.logo-rodape{
+    margin: 0 auto;
+}
+.texto-rodape h5{
+    margin-top: 5px;
+    text-align: center;
+}
