@@ -62,10 +62,9 @@ nav ul li > a{
 }
 nav ul li:first-child{
     padding: 10px;
-    margin-right: 5px;
 }
 .button1:focus ~ nav ul{
-    height: 190px;
+    height: 155px;
 }
 nav ul{
     overflow: hidden;
@@ -168,12 +167,20 @@ header a{
         align-items: center;
         padding-bottom: 8px;
     }
+    header, header nav ul {
+    display: flex;
+    flex-direction: row;
+    font-size: 19px;
+    justify-content: space-between;
+    margin: 0 15px;
+    }
     header{
         padding: 0 35px;
         margin-top: 15px;
     }
     header, header nav ul{
         flex-direction: column;
+        justify-content: flex-end;
     }
     .logo,.mais{
         display: none;

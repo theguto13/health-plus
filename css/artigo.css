@@ -58,7 +58,7 @@
     font-weight: bold;
     margin-left: 30px;
     padding: 8px;
-    width: max-content;
+    min-width: max-content;
     border-radius: 3px;
 }
 .referencia a:hover{
