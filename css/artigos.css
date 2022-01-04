@@ -35,7 +35,7 @@
     position: relative;
     width: 29%;
     min-height: 300px;
-    margin: 0 30px 20px;
+    margin: 30px 20px;
     text-decoration: none;
     transition: .5s all;
     background-repeat: no-repeat;
@@ -44,9 +44,9 @@
     border-radius: 7px;
 }
 .rec h3{
-    color: white;
+    color: #292929;
     position: absolute;
-    bottom: 8px;
+    bottom: -30px;
     left: 11px;
     transition: .5s all;
     padding: 3px;
