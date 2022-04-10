@@ -19,8 +19,8 @@
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%, #899f3b 50%);
     transition: 1s all;
-    user-select: none;
     animation: titulos 1s both .5s;
+    user-select: none;
 }
 .recomendation-container{
     width: 100%;
@@ -49,7 +49,7 @@
     color: #292929;
     font-size: larger;
     position: absolute;
-    bottom: -30px;
+    bottom: -40px;
     left: 11px;
     transition: .5s all;
     padding: 3px;
@@ -81,9 +81,15 @@
     .rec{
         min-width: 250px;
         min-height: 125px;
+        margin: 40px auto;
     }
     .rec h3{
-        color: #D6006E;
+        color: #292929;
+        bottom: -50px;
+        text-align: left;
+    }
+    .recomendation2 h3{
+        bottom: -40px;
     }
 }
 /*

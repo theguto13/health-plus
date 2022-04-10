@@ -7,9 +7,15 @@
     <link rel="shortcut icon" href="icon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
+    <script src="js/script.js"></script>
+    <script src="js/calculadora.js"></script>
     <title>Início | health+</title>
 </head>
 <body>
+    <!--Tela de Carregamento-->
+    <div class="carregamento" id="carregamento">
+        <div class="loading"></div>
+    </div>
     <!--Header-->
     <header>
         <div class="logo">
@@ -78,7 +84,7 @@
                             <label for="masculino">Masculino</label>
                         </div>
                     </div>
-                    <button id="calcular">Calcular</button>
+                    <button id="calcular" onclick="imc()">Calcular</button>
                 </main>
             </div>
             <div class="resultado">
@@ -89,7 +95,6 @@
             </div>
         </div>
     </div>
-    <script src="js/script.js"></script>
     <!--Video / Texto-->
     <div class="video-texto">
         <h2 class="titulo-video">Recomendação da Semana</h2>

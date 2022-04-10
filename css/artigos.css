@@ -72,28 +72,16 @@
 .artigo5{
     background-image: url(../images/atividade4.jpg);
 }
-.artigo5 h3{
-    color: #292929;
-}
 .artigo6{
     background-image: url(../images/atividade5.jpg);
     background-size: 90%;
 }
-.artigo6 h3{
-    color: #292929;
-}
 .artigo7{
     background-image: url(../images/atividade6.jpg);
-}
-.artigo7 h3{
-    color: #292a3f;
 }
 .artigo8{
     background-image: url(../images/atividade7.jpg);
     background-position: 0 100%;
-}
-.artigo8 h3{
-    color: #292929;
 }
 .artigo9{
     background-color: #C1D28C;
@@ -110,14 +98,6 @@
 .artigo9-conteudo img{
     width: 30%;
     height: 50%;
-}
-.artigo9 .artigo9-conteudo h3{
-    color: #292929;
-    position: absolute;
-    bottom: 8px;
-    left: 11px;
-    transition: .5s all;
-    padding: 3px;
 }
 .artigo9:hover{
     background-color: white;
@@ -141,5 +121,10 @@
     .rec{
         min-width: 250px;
         min-height: 125px;
+        margin: 40px auto;
+    }
+    .rec h3{
+        text-align: left;
+        bottom: -50px;
     }
 }

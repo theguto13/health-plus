@@ -120,7 +120,7 @@
     padding: 5px;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%, #2362ac 50%);
-    animation: back1 1s both .8s;
+    animation: 1s both .8s;
 }
 @keyframes back1{
     100%{
@@ -129,7 +129,7 @@
     }
 }
 #more{
-    animation: mais 20s infinite;
+    animation: mais 10s infinite;
 }
 .r1{
     background-color: #2362ac;
@@ -155,7 +155,7 @@
     padding: 5px;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%, #396355 50%);
-    animation: back2 1s both .8s;
+    animation: 1s both .8s;
 }
 @keyframes back2{
     100%{
@@ -182,7 +182,7 @@
     padding: 5px;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%, #bbd75c 50%);
-    animation: back3 1s both .8s;
+    animation: 1s both .8s;
 }
 @keyframes back3{
     100%{
@@ -209,7 +209,7 @@
     padding: 5px;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%, #c8dfbc 50%);
-    animation: back4 1s both .8s;
+    animation: 1s both .8s;
 }
 @keyframes back4{
     100%{
@@ -236,7 +236,7 @@
     padding: 5px;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%, #6e7ed6 50%);
-    animation: back5 1s both .8s;
+    animation: 1s both .8s;
 }
 @keyframes back5{
     100%{
@@ -263,7 +263,7 @@
     padding: 5px;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%, #c04192 50%);
-    animation: back6 1s both .8s;
+    animation: 1s both .8s;
 }
 @keyframes back6{
     100%{
@@ -290,7 +290,7 @@
     padding: 5px;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%, #292a3f 50%);
-    animation: back7 1s both .8s;
+    animation: 1s both .8s;
 }
 @keyframes back7{
     100%{
@@ -319,7 +319,7 @@
     padding: 5px;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%, #f5a66d 50%);
-    animation: back8 1s both .8s;
+    animation: 1s both .8s;
 }
 @keyframes back8{
     100%{
@@ -348,7 +348,7 @@
     padding: 5px;
     background-size: 200% 100%;
     background-image: linear-gradient(to right, white 50%, #C1D28C 50%);
-    animation: back9 1s both .8s;
+    animation: 1s both .8s;
 }
 @keyframes back9{
     100%{
